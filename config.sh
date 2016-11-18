@@ -60,29 +60,30 @@ rm google-chrome-stable_current_amd64.deb
 
 # Installation de paquets
 
-sudo apt-get install software-properties-common
-sudo apt-get install virtualbox-5.1
-sudo apt-get install mysql-server
-sudo apt-get install terminator
-sudo apt-get install arc-theme
-sudo apt-get install autoconf
-sudo apt-get install php7.0
-sudo apt-get install nginx
-sudo apt-get install make
-sudo apt-get install curl
-sudo apt-get install git
-sudo apt-get install zsh
-sudo apt-get install zip
+sudo apt-get install -y software-properties-common
+sudo apt-get install -y spotify-client
+sudo apt-get install -y virtualbox-5.1
+sudo apt-get install -y mysql-server
+sudo apt-get install -y terminator
+sudo apt-get install -y arc-theme
+sudo apt-get install -y autoconf
+sudo apt-get install -y nginx
+sudo apt-get install -y php7.0
+sudo apt-get install -y make
+sudo apt-get install -y curl
+sudo apt-get install -y git
+sudo apt-get install -y zsh
+sudo apt-get install -y zip
 
 
 # Installation d'extensions PHP
 
-sudo apt-get install php7.0-mstring
-sudo apt-get install php7.0-sqlite
-sudo apt-get install php7.0-mysql
-sudo apt-get install php7.0-curl
-sudo apt-get install php7.0-dom
-sudo apt-get install php7.0-fpm
+sudo apt-get install -y php7.0-mstring
+sudo apt-get install -y php7.0-sqlite
+sudo apt-get install -y php7.0-mysql
+sudo apt-get install -y php7.0-curl
+sudo apt-get install -y php7.0-dom
+sudo apt-get install -y php7.0-fpm
 
 
 # Installation du pack d'icones
@@ -98,12 +99,6 @@ popd
 wget https://discordapp.com/api/download/canary?platform=linux
 sudo dpkg -i discord-canary-*.deb  
 rm discord-canary-*.deb
-
-
-# Installation de oh my zsh
-
-chsh -s $(which zsh)
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 
 # Installation de Fira Code Font
@@ -155,7 +150,7 @@ sudo dpkg -i sublime-text_build-3126_amd64.deb
 wget https://download.jetbrains.com/webide/PhpStorm-2016.2.2.tar.gz
 tar xfz PhpStorm-*.tar.gz
 rm PhpStorm-*.tar.gz
-mv ~/Downloads/PhpStorm-* ~/Programs/phpstorm
+mv PhpStorm-* ~/Programs/phpstorm
 sudo chmod -R u+rwx ~/Programs/phpstorm
 bash ~/Programs/phpstorm/bin/phpstorm.sh
 sudo ln -s ~/Programs/phpstorm/bin/phpstorm.sh ~/bin/phpstorm
@@ -181,10 +176,6 @@ dconf write /org/gnome/shell/extensions/dash-to-dock/preferred-monitor "0"
 dconf write /org/gnome/shell/favorite-apps "['org.gnome.Nautilus.desktop', 'terminator.desktop', 'spotify.desktop', 'google-chrome.desktop']"
 
 
-# Application de la configuration zsh
-
-cp .zshrc ~/.zshrc 
-
 # Paramétrage du montage du disque de données au démarage
 
 #echo '/dev/sdb1  /media/mmarteau/Data    ntfs    default         0       2' | sudo tee --append /etc/fstab
@@ -200,4 +191,9 @@ cp .zshrc ~/.zshrc
 
 # Installation des plugins PhpStorm
 # Configuration du thème Arc
+
+# Installation de oh my zsh
+
+chsh -s $(which zsh)
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
