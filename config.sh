@@ -2,7 +2,7 @@
 
 # Avant de lancer le fichier, il faut s'assurer que le système contient le paquet sudo et que l'utilisateur mmarteau est sudo
 # apt-get install sudo
-# echo "mmarteau ALL=(ALL:ALL) NOPASSWD: ALL" sudo tee --append /etc/sudoers
+# echo "mmarteau ALL=(ALL:ALL) NOPASSWD: ALL" | tee --append /etc/sudoers
 # You will then need to logout and login again
 
 
@@ -168,7 +168,17 @@ sudo ln -s ~/Programs/phpstorm/bin/phpstorm.sh ~/bin/phpstorm
 dconf write /org/gnome/shell/enabled-extensions "['alternative-status-menu@gnome-shell-extensions.gcampax.github.com', 'dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']"
 dconf write /org/gnome/shell/extensions/user-theme/name "Arc"
 dconf write /org/gnome/shell/extensions/dash-to-dock/extend-height "true"
-dconf write /org/gnome/shell/extensions/dash-to-dock/dock-fixed 
+dconf write /org/gnome/shell/extensions/dash-to-dock/dock-fixed "true"
+dconf write /org/gnome/shell/extensions/dash-to-dock/apply-custom-theme "false"
+dconf write /org/gnome/shell/extensions/dash-to-dock/custom-theme-running-dots "false"
+dconf write /org/gnome/shell/extensions/dash-to-dock/height-fraction  "1.0"
+dconf write /org/gnome/shell/extensions/dash-to-dock/custom-theme-shrink "true"
+dconf write /org/gnome/shell/extensions/dash-to-dock/background-opacity "1.0"
+dconf write /org/gnome/shell/extensions/dash-to-dock/dash-max-icon-size "20"
+dconf write /org/gnome/shell/extensions/dash-to-dock/opaque-background "true"
+dconf write /org/gnome/shell/extensions/dash-to-dock/preferred-monitor "0"
+
+dconf write /org/gnome/shell/favorite-apps "['org.gnome.Nautilus.desktop', 'terminator.desktop', 'spotify.desktop', 'google-chrome.desktop']"
 
 
 # Application de la configuration zsh
