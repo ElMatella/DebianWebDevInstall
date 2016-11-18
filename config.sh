@@ -93,6 +93,7 @@ git clone https://github.com/horst3180/arc-icon-theme --depth 1 && cd arc-icon-t
 ./autogen.sh --prefix=/usr
 sudo make install
 popd
+popd
 
 # Installation de Discord
 
@@ -133,7 +134,7 @@ mv composer.phar ~/bin/composer
 wget https://nodejs.org/dist/v7.1.0/node-v7.1.0-linux-x64.tar.xz
 tar xf node-*.tar.xz
 rm node-*.tar.xz
-mv ~/Downloads/node-* ~/Programs/node
+mv node-* ~/Programs/node
 sudo chmod -R u+rwx ~/Programs/node
 ln -s ~/Programs/node/bin/node ~/bin/node
 ln -s ~/Programs/node/bin/npm ~/bin/npm
