@@ -98,8 +98,8 @@ popd
 # Installation de Discord
 
 wget https://discordapp.com/api/download/canary?platform=linux
-sudo dpkg -i discord-canary-*.deb  
-rm discord-canary-*.deb
+sudo dpkg -i "canary?platform=linux"
+rm "canary?platform=linux"
 
 
 # Installation de Fira Code Font
@@ -112,9 +112,9 @@ fc-cache -f
 
 
 # Configuration de Terminator
-
+pwd
 mkdir -p $HOME/.config/terminator
-cp terminator.conf $HOME/.config/terminator
+cp terminator.conf $HOME/.config/terminator/config
 
 
 # Installation d'extensions Gnome
@@ -162,7 +162,7 @@ sudo ln -s ~/Programs/phpstorm/bin/phpstorm.sh ~/bin/phpstorm
 # Configuration tweak tool
 
 dconf write /org/gnome/shell/enabled-extensions "['alternative-status-menu@gnome-shell-extensions.gcampax.github.com', 'dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']"
-dconf write /org/gnome/shell/extensions/user-theme/name "Arc"
+dconf write /org/gnome/shell/extensions/user-theme/name "'Arc'"
 dconf write /org/gnome/shell/extensions/dash-to-dock/extend-height "true"
 dconf write /org/gnome/shell/extensions/dash-to-dock/dock-fixed "true"
 dconf write /org/gnome/shell/extensions/dash-to-dock/apply-custom-theme "false"
@@ -197,4 +197,3 @@ dconf write /org/gnome/shell/favorite-apps "['org.gnome.Nautilus.desktop', 'term
 
 chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
