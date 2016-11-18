@@ -128,6 +128,12 @@ ln -s ~/Programs/node/bin/npm ~/bin/npm
 wget https://download.sublimetext.com/sublime-text_build-3126_amd64.deb
 sudo dpkg -i sublime-text_build-3126_amd64.deb
 
+# Installation de git kraken
+
+wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
+sudo dpkg -i gitkraken-amd64.deb
+rm gitkraken-amd64.deb
+
 # Configuration de phpstorm
 cp -r phpstorm-config ~/.PhpStorm2016.2
 
