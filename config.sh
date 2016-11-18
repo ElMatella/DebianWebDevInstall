@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
 # Avant de lancer le fichier, il faut s'assurer que le système contient le paquet sudo et que l'utilisateur mmarteau est sudo
+# apt-get install sudo
+# echo "mmarteau ALL=(ALL:ALL) NOPASSWD: ALL" sudo tee --append /etc/sudoers
+# You will then need to logout and login again
 
 
 # Montage du disque des données
@@ -84,12 +87,11 @@ sudo apt-get install php7.0-fpm
 
 # Installation du pack d'icones
 
-cd ~/Programs
+pushd ~/Programs
 git clone https://github.com/horst3180/arc-icon-theme --depth 1 && cd arc-icon-theme
 ./autogen.sh --prefix=/usr
 sudo make install
-cd ~
-
+popd
 
 # Installation de Discord
 
