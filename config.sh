@@ -128,6 +128,16 @@ ln -s ~/Programs/node/bin/npm ~/bin/npm
 wget https://download.sublimetext.com/sublime-text_build-3126_amd64.deb
 sudo dpkg -i sublime-text_build-3126_amd64.deb
 
+# Configuration de sublime text
+
+wget https://packagecontrol.io/Package%20Control.sublime-package
+mv Package\ Control.sublime-package ~/.config/sublime-text-3/Installed\ Packages/Package\ Control.sublime-package
+
+wget https://github.com/equinusocio/material-theme/archive/v4.0.2.zip
+unzip v4.0.2.zip -d ~/.config/sublime-text-3/Packages 
+mv ~/.config/sublime-text-3/Packages/material-theme-4.0.2 ~/.config/sublime-text-3/Packages/Material\ Theme
+cp Preferences.sublime-settings ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
+
 # Installation de git kraken
 
 wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
