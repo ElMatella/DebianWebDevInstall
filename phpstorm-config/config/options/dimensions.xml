@@ -1,0 +1,26 @@
+<application>
+  <component name="DimensionService">
+    <location key="FileChooserDialogImpl.0.0.1920.1080" x="708" y="176" />
+    <location key="#com.intellij.ide.actions.ChooseComponentsToExportDialog.0.0.1920.1080" x="683" y="303" />
+    <location key="WELCOME_SCREEN.1920.0.1920.1080" x="960" y="230" />
+    <location key="com.intellij.ide.util.TipDialog.1920.0.1920.1080" x="2481" y="337" />
+    <location key="#Browse_JetBrains_Plugins_.1920.0.1920.1080" x="2347" y="174" />
+    <location key="#Browse_Repositories.1920.0.1920.1080" x="2347" y="174" />
+    <location key="SettingsEditor.1920.0.1920.1080" x="458" y="120" />
+    <location key="com.intellij.ide.util.TipDialog.0.0.1920.1080" x="695" y="369" />
+    <location key="SettingsEditor.0.0.1920.1080" x="460" y="207" />
+    <location key="#com.intellij.execution.impl.EditConfigurationsDialog.0.0.1920.1080" x="444" y="209" />
+    <location key="com.intellij.database.view.ui.DeleteDialog.0.0.1920.1080" x="669" y="295" />
+    <size key="FileChooserDialogImpl.0.0.1920.1080" width="494" height="521" />
+    <size key="#com.intellij.ide.actions.ChooseComponentsToExportDialog.0.0.1920.1080" width="543" height="265" />
+    <size key="#Browse_JetBrains_Plugins_.1920.0.1920.1080" width="824" height="694" />
+    <size key="#Browse_Repositories.1920.0.1920.1080" width="824" height="694" />
+    <size key="SettingsEditor.1920.0.1920.1080" width="1024" height="692" />
+    <size key="SettingsEditor.0.0.1920.1080" width="1045" height="692" />
+    <size key="GridCell.Tab.0.left.0.0.1920.1080" width="0" height="0" />
+    <size key="GridCell.Tab.0.center.0.0.1920.1080" width="0" height="0" />
+    <size key="GridCell.Tab.0.right.0.0.1920.1080" width="0" height="0" />
+    <size key="GridCell.Tab.0.bottom.0.0.1920.1080" width="0" height="0" />
+    <size key="com.intellij.database.view.ui.DeleteDialog.0.0.1920.1080" width="619" height="516" />
+  </component>
+</application>

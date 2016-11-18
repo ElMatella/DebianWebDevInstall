@@ -145,6 +145,9 @@ ln -s ~/Programs/node/bin/npm ~/bin/npm
 wget https://download.sublimetext.com/sublime-text_build-3126_amd64.deb
 sudo dpkg -i sublime-text_build-3126_amd64.deb
 
+# Configuration de phpstorm
+cp -r phpstorm-config ~/.PhpStorm2016.2
+
 
 # Installation de phpstorm
 
@@ -197,3 +200,5 @@ dconf write /org/gnome/shell/favorite-apps "['org.gnome.Nautilus.desktop', 'term
 
 chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+rm ~/.zshrc
+cp .zshrc ~/.zshrc

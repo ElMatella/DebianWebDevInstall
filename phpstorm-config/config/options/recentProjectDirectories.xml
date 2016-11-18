@@ -1,0 +1,54 @@
+<application>
+  <component name="RecentDirectoryProjectsManager">
+    <option name="recentPaths">
+      <list>
+        <option value="$USER_HOME$/Code/larastore-admin-back" />
+        <option value="$USER_HOME$/Code/larastore" />
+        <option value="$USER_HOME$/Downloads/debian-config" />
+      </list>
+    </option>
+    <option name="openPaths">
+      <list>
+        <option value="$USER_HOME$/Code/larastore-admin-back" />
+      </list>
+    </option>
+    <option name="lastPath" value="$USER_HOME$/Code/larastore-admin-back" />
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/Code/larastore">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="PS-162.2380.11" />
+              <option name="productionCode" value="PS" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1479461165975" />
+              <option name="buildTimestamp" value="1477260000000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Code/larastore-admin-back">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="PS-162.2380.11" />
+              <option name="productionCode" value="PS" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1479480499639" />
+              <option name="buildTimestamp" value="1477260000000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/debian-config">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="PS-162.2380.11" />
+              <option name="productionCode" value="PS" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1479385793885" />
+              <option name="buildTimestamp" value="1477260000000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</application>

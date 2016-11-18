@@ -1,0 +1,15 @@
+<application>
+  <component name="PropertiesComponent">
+    <property name="evlsprt3.162" value="19" />
+    <property name="PhpStorm.InitialConfiguration" value="true" />
+    <property name="PhpStorm.dumbRunEnabled" value="true" />
+    <property name="PhpStorm.initialConfigurationShown" value="true" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/Code/larastore-admin-back&#10;/home/mmarteau/Code/larastore&#10;/home/mmarteau/Downloads/debian-config&#10;/home/mmarteau/Downloads/debian-config/settings.jar" />
+    <property name="toolwindow.stripes.buttons.info.shown" value="true" />
+    <property name="DeploymentNotificationsComponent.WarnDisplayed.Java7&amp;Windows7FTPIssue" value="false" />
+    <property name="lastTip" value="24" />
+    <property name="PLUGIN_FILTER" value="vue&#10;material" />
+    <property name="com.chrisrm.idea.MaterialThemeUI.theme" value="DEFAULT" />
+    <property name="com.intellij.database.view.ui.DeleteDialog.previewExpanded" value="true" />
+  </component>
+</application>
