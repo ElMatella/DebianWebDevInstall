@@ -49,6 +49,7 @@ sudo apt-get install -y virtualbox-5.1
 sudo apt-get install -y mysql-server
 sudo apt-get install -y terminator
 sudo apt-get install -y arc-theme
+sudo apt-get install libgtk-3-dev
 sudo apt-get install -y autoconf
 sudo apt-get install -y nginx
 sudo apt-get install -y php7.0
@@ -177,6 +178,15 @@ dconf write /org/gnome/desktop/interface/gtk-theme "'Arc'"
 dconf write /org/gnome/desktop/interface/icon-theme "'Arc'"
 dconf write /org/gnome/desktop/wm/preferences/theme "'Arc'"
 dconf write /org/gnome/shell/favorite-apps "['org.gnome.Nautilus.desktop', 'terminator.desktop', 'spotify.desktop', 'google-chrome.desktop']"
+dconf write /org/gnome/desktop/wm/preferences/button-layout "':minimize,maximize,close'"
+
+
+# Installation de Flatubulous
+
+git clone https://github.com/andreisergiu98/arc-flatabulous-theme
+bash arc-flatubulous-theme/autogen.sh --prefix=/usr
+sudo make install
+
 
 # Installation de oh my zsh
 
