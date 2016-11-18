@@ -6,23 +6,6 @@
 # You will then need to logout and login again
 
 
-# Montage du disque des données
-
-#sudo mount /dev/sdb1 /media/mmarteau/Data
-
-#rm -r ~/Documents
-#rm -r ~/Downloads
-#rm -r ~/Pictures
-#rm -r ~/Videos
-#rm -r ~/Music
-
-#ln -s /media/mmarteau/Data/Shared/Downloads ~/Downloads
-#ln -s /media/mmarteau/Data/Shared/Pictures ~/Documents
-#ln -s /media/mmarteau/Data/Shared/Pictures ~/Pictures
-#ln -s /media/mmarteau/Data/Shared/Videos ~/Videos
-#ln -s /media/mmarteau/Data/Shared/Music ~/Music
-
-
 # Création de dossiers
 
 mkdir ~/Programs
@@ -159,8 +142,6 @@ sudo chmod -R u+rwx ~/Programs/phpstorm
 bash ~/Programs/phpstorm/bin/phpstorm.sh
 sudo ln -s ~/Programs/phpstorm/bin/phpstorm.sh ~/bin/phpstorm
 
-# Installation de virtualbox
-
 
 # Configuration tweak tool
 
@@ -176,25 +157,10 @@ dconf write /org/gnome/shell/extensions/dash-to-dock/background-opacity "1.0"
 dconf write /org/gnome/shell/extensions/dash-to-dock/dash-max-icon-size "20"
 dconf write /org/gnome/shell/extensions/dash-to-dock/opaque-background "true"
 dconf write /org/gnome/shell/extensions/dash-to-dock/preferred-monitor "0"
-
+dconf write /org/gnome/desktop/interface/gtk-theme "'Arc'"
+dconf write /org/gnome/desktop/interface/icon-theme "'Arc'"
+dconf write /org/gnome/desktop/wm/preferences/theme "'Arc'"
 dconf write /org/gnome/shell/favorite-apps "['org.gnome.Nautilus.desktop', 'terminator.desktop', 'spotify.desktop', 'google-chrome.desktop']"
-
-
-# Paramétrage du montage du disque de données au démarage
-
-#echo '/dev/sdb1  /media/mmarteau/Data    ntfs    default         0       2' | sudo tee --append /etc/fstab
-
-
-# Installation des pilotes de la carte graphique
-
-#sudo apt-get install linux-headers-amd64
-#sudo apt-get install -t jessie-backports nvidia-driver 
-
-
-## Restant à installer ou à configurer:
-
-# Installation des plugins PhpStorm
-# Configuration du thème Arc
 
 # Installation de oh my zsh
 
